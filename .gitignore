@@ -1,0 +1,22 @@
+.DS_Store
+.idea/
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.env
+
+# data
+*.parquet
+*.csv
+*.csv.gz
+*.duckdb
+
+# terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+
+# credentials — never commit
+*credentials*.json
+*service-account*.json

@@ -1,0 +1,14 @@
+# Course reference: 01-docker-terraform/04-postgres-docker.md, 07-pgadmin.md, 09-docker-compose.md
+services:
+  pgdatabase:
+    image: postgres:18
+    # TODO: environment (POSTGRES_USER / POSTGRES_PASSWORD / POSTGRES_DB = ny_taxi)
+    # TODO: named volume mounted at /var/lib/postgresql
+    # TODO: publish port 5432
+
+  # TODO: pgadmin service (image dpage/pgadmin4), published on localhost:8085
+  #       Question to answer: which hostname does pgAdmin use to reach Postgres, and why?
+
+  # TODO (unit 08): an ingest service built from ./Dockerfile, pointed at pgdatabase
+
+# TODO: declare the named volumes
